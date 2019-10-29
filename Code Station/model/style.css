@@ -1,0 +1,151 @@
+.javabtn{
+    padding: 1.5px 6px 4px 6px;
+    text-align: center;
+    display: inline-block;
+    font-size: 19.5px;
+    margin: 4px 2px;
+    cursor: pointer;
+    background-color: #fe412e;
+    color:white;
+    border: 2px solid #fe412e;
+    transition:.3s;
+    float:right;
+    outline: none;
+}
+
+#site{
+    margin-left:15px;
+}
+
+.javabtn:hover {
+    background-color: #e23928;
+  border-color:#e23928;
+    color: white;
+}
+.javabtn:active {
+  background-color: #e23928;
+  border-color:#e23928;
+  transform: translateY(5px);
+  color: white;
+}
+
+a.tooltip {
+    position: relative;
+    color: #fe412e;
+}
+
+a.tooltip .tooltiptext {
+    visibility: hidden;
+    
+    display: -webkit-inline-table;
+	display: -moz-inline-table;
+	display: -ms-inline-table;
+	display: -o-inline-table;
+    display:inline-table;
+    
+    width: 30vw;
+    
+    background-color: #fff;
+    color: #fe412e;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    left: 100%;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border:solid 1px #fe412e;
+    font-size:10px;
+}
+
+a.tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
+    top:100%;
+    font-size:14px;
+}
+
+
+a.tooltip2 .tooltiptext {
+    visibility: hidden;
+    display:inline-table;
+    background-color: #fff;
+    color: #fe412e;
+    text-align: center;
+    border-radius: 6px;
+    padding: 5px;
+    position: absolute;
+    z-index: 1;
+    right:3vw;
+    opacity: 0;
+    transition: opacity 0.5s;
+    border:solid 1px #fe412e;
+    width: 30vw;
+}
+
+a.tooltip2:hover .tooltiptext{
+    top:110%;
+    visibility: visible;
+    opacity: 1;
+    font-size:13.5px;
+}
+
+a.tooltip2 {
+    position: relative;
+    color: #fe412e;
+    
+}
+
+li.disabled {
+    background: #ccc;
+    cursor: default;
+}
+
+li.disabled:hover {
+    background: #ccc;
+    cursor: default;
+}
+.codigo-java{
+    
+	font-color: black;
+	display: block;
+    padding: 9.5px ;
+    padding-left: 2%;
+    margin: 0 0 10px;
+    font-size: 18px;
+    line-height: 20px;
+    width: 96%;
+    word-break: break-all;
+    word-wrap: break-word;
+    white-space: pre-wrap;
+    background-color: #f5f5f5;
+    border: 1px solid rgba(0,0,0,0.15);
+    border-radius: 4px;
+
+}
+@media only screen and (max-width: 600px) {
+  .right svg {
+    display:none;
+  }
+  .right p{
+    padding-left:14.6px;
+    padding-right:14.6px;
+  }
+}
+@media only screen and (max-width: 400px) {
+    h1{
+        font-size:1.5em;
+    }
+  .right svg {
+    display:none;
+  }
+  .right p{
+    padding-left:5.4px;
+    padding-right:5.4px;
+  }
+  #navpagina p{
+    padding-left:12px;
+    padding-right:12px;
+  }
+}

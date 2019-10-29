@@ -1,0 +1,31 @@
+
+# HTID:7726418: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+php_value display_errors 1
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:7726418:
+
+RewriteEngine on
+RewriteCond %{REQUEST_FILENAME} !-d
+RewriteCond %{REQUEST_FILENAME}\.php -f
+RewriteRule ^(.*)$ $1.php
+
+<Files "comentario.php">
+    Order Allow,Deny
+    Allow from all
+</Files>
+
+deny from all
+ErrorDocument 404 /erros/errorpage
+
+
+<files ~ "^.*\.([Hh][Tt][Aa])">
+order allow,deny
+deny from all
+satisfy all
+</files>
+
+Options -Indexes
+
+
+# HTID:7984384: DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES BELOW
+Redirect 301 /index http://elixirtcc.000webhostapp.com/entrar
+# DO NOT REMOVE OR MODIFY THIS LINE AND THE LINES ABOVE HTID:7984384:
